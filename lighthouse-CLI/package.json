@@ -1,0 +1,18 @@
+{
+  "name": "lighthouseCLI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "json2csv": "6.0.0-alpha.2"
+  }
+}
