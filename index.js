@@ -28,7 +28,7 @@ const createFetchUrls = urls => {
         'https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed'
       )
       u.searchParams.set('key', API_KEY)
-      u.searchParams.set('url', url)
+      u.searchParams.set('url', url.url)
       u.searchParams.set('strategy', strategy)
       categories.forEach(category => {
         u.searchParams.append('category', category)
