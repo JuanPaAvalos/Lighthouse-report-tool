@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs' // For file writing
 import { parse } from 'json2csv'
 import dotenv from 'dotenv'
-import { url } from 'inspector'
+import { SitesUrls } from './sites.js'
 
 dotenv.config()
 
@@ -9,26 +9,18 @@ const API_KEY = 'AIzaSyBCJs3zOZXXDdSCMVEkuJPEOMXr1zsHQgY'
 const strategies = ['MOBILE', 'DESKTOP']
 const categories = ['ACCESSIBILITY', 'BEST_PRACTICES', 'PERFORMANCE', 'SEO']
 
-let urls = [
-  'https://www.riotgames.com/en/',
-  'https://hollowknightsilksong.com/'
-]
-
 //* Create urls for lighthouse based on current values
-// return an arrat of
-// {
-//     original: string,
-//     mobile: URL,
-//     desktop: URL
-// }
-const createFetchUrls = () => {
+// return an arrat of objects with mobile and desktop urls
+const createFetchUrls = urls => {
   let resultUrls = []
 
   for (const url of urls) {
     let urlObj = {
       mobile: '',
       desktop: '',
-      original: url
+      original: url.url,
+      route: url.ruta,
+      screen: url.pantalla
     }
 
     for (const strategy of strategies) {
@@ -87,11 +79,19 @@ const extractFields = reportData => {
 }
 
 //* Object for Json result
-const createReportObject = (originalUrl, mobileData, desktopData) => {
+const createReportObject = (
+  originalUrl,
+  route,
+  screen,
+  mobileData,
+  desktopData
+) => {
   const mobileObjData = mobileData ? extractFields(mobileData) : {}
   const desktopObjData = desktopData ? extractFields(desktopData) : {}
 
   return {
+    route: route,
+    screen: screen,
     url: originalUrl,
     mobile_performance: mobileObjData.performanceScore || '',
     mobile_accessibility: mobileObjData.accessibilityScore || '',
@@ -104,24 +104,13 @@ const createReportObject = (originalUrl, mobileData, desktopData) => {
   }
 }
 
-const generateFileName = () => {
-  const now = new Date()
-
-  const year = now.getFullYear()
-  const month = String(now.getMonth() + 1).padStart(2, '0') // 0-11 → 1-12
-  const day = String(now.getDate()).padStart(2, '0')
-  const hours = String(now.getHours()).padStart(2, '0')
-  const minutes = String(now.getMinutes()).padStart(2, '0')
-
-  return `${year}-${month}-${day}-${hours}-${minutes}`
-}
-
 async function run () {
   let nonResult = []
   let reportsArray = []
+  let urls = SitesUrls
 
   // arreglo de objetos con las urls para evaluar mobile y desktop
-  const urlArray = createFetchUrls()
+  const urlArray = createFetchUrls(urls)
 
   let iteration = 1
   for (const urlObj of urlArray) {
@@ -150,6 +139,8 @@ async function run () {
 
     const reportResult = createReportObject(
       urlObj.original,
+      urlObj.route,
+      urlObj.screen,
       mobileResult,
       desktopResult
     )
