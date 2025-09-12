@@ -2,6 +2,7 @@ import { writeFileSync } from 'fs' // For file writing
 import { parse } from 'json2csv'
 import dotenv from 'dotenv'
 import { SitesUrls } from './sites.js'
+import { readSitesFile } from './getUrlsFromFile.js'
 
 dotenv.config()
 
@@ -107,10 +108,13 @@ const createReportObject = (
 async function run () {
   let nonResult = []
   let reportsArray = []
+
+  //* Both works, from file or from sites.txt 
   let urls = SitesUrls
+  const fileUrls = await readSitesFile('sites.txt', false)
 
   // arreglo de objetos con las urls para evaluar mobile y desktop
-  const urlArray = createFetchUrls(urls)
+  const urlArray = createFetchUrls(fileUrls)
 
   let iteration = 1
   for (const urlObj of urlArray) {

@@ -1,3 +1,2 @@
-https://www.pricetravel.com/
-https://www.aeromexicovacations.com/es-mx
-https://juanpaavalos.github.io/juan-avalos-portfolio/#/
+Buscar hotel	checkout	https://www.pricetravel.com/en/deals/top-10-family-friendly-hotels
+Buscar hotel	home	https://www.pricetravel.com
