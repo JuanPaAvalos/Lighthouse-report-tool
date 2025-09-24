@@ -13,6 +13,7 @@
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
     "dotenv": "^17.2.2",
+    "exceljs": "^4.4.0",
     "json2csv": "6.0.0-alpha.2"
   }
 }
