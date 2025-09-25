@@ -1,2 +1,26 @@
-Buscar hotel	checkout	https://www.pricetravel.com/en/deals/top-10-family-friendly-hotels
-Buscar hotel	home	https://www.pricetravel.com
+Buscar un hotel	Home. hotel	https://www.pricetravel.com/hoteles
+Buscar un hotel	Listado de hoteles	https://www.pricetravel.com/hoteles/cancun?placeId=54455&placeType=6&adults=2&checkin=2024-09-04&checkout=2024-09-06&room1.adults=2&rooms=1
+Elegir un hotel	Ficha de hotel	https://www.pricetravel.com/hotel/ocean-view-cancun-arenas?placeId=100652&placeType=14&adults=2&checkin=2024-08-14&checkout=2024-08-18&room1.adults=2&rooms=1
+Reservar un hotel	Información del viajero	https://www.pricetravel.com/hotel-checkout
+Reservar un hotel	Elegir formas de pago  - PGA	https://pagos.pricetravel.com/charge/8b882bdc-1e61-456d-82e5-863cdff13ac1?culture=es-mx
+Reservar un hotel	Thankyou page  	https://www.pricetravel.com/hotel/voucher?keyValidation=554433f9-01a1-468d-984b-04324f96372d&id=NhCJEBlT8cmLOgI1pNUbe%2FCF3GdXqVakIB9%2009xcKfc%3D&em=r%20KLaeBsPzQsParAxf3SROUuZcIadPgSgROpYdyayOPJXaDsJq54akibQ5xoiW%2Ft&place=ewikO9m3z6jdjO8rS7cgJne%2FGhFpQu4BHcAk1QWNrWU%3D&ri=InVyMOLhQ%2FCQr%20lpRo%2FWyRAxBTyQkxSMCD1%20tF9dLRk%3D&rp=8X%20AyiGHUNUT6XA18AQcMSD0LE6%20h3e44iNmN5nxDEM%3D&rc=rs3P6HctQStadl9a50ZJJ4XxyQYIv6PDiYfUSn%20J2dU%3D&isMobile=False
+Buscar un vuelo	Home vuelos	https://www.pricetravel.com/vuelos
+Buscar un vuelo	Listado de vuelos- Redondo	https://www.pricetravel.com/vuelos/resultados?startingFromAirport=MEX&returningFromAirport=LAS&startingFromDateTime=2025-05-07&returningFromDateTime=2025-05-09&tripMode=1&mode=1&adults=1&kids=0&ageKids=
+Buscar un vuelo	Listado de vuelos- Sencillo	https://www.pricetravel.com/vuelos/resultados?startingFromAirport=MEX&returningFromAirport=MZT&startingFromDateTime=2025-05-07&returningFromDateTime=2025-05-07&tripMode=0&mode=0&adults=1&kids=0&ageKids=
+Elegir un vuelo	Listado de vuelos - Redondo	https://www.pricetravel.com/vuelos/resultados?startingFromAirport=MEX&returningFromAirport=LAS&startingFromDateTime=2025-05-07&returningFromDateTime=2025-05-09&tripMode=1&mode=1&adults=1&kids=0&ageKids=
+Elegir un vuelo	Listado de vuelos- Sencillo	https://www.pricetravel.com/vuelos/resultados?startingFromAirport=MEX&returningFromAirport=MZT&startingFromDateTime=2025-05-07&returningFromDateTime=2025-05-07&tripMode=0&mode=0&adults=1&kids=0&ageKids=
+Reservar un vuelo	Información del viajero	https://www.pricetravel.com/vuelos/checkout
+Reservar un vuelo	Elegir formas de pago  - PGA	https://pagos.pricetravel.com/charge/d44e9cad-d515-4cc1-a119-5c2d1f9ff99a?culture=es-mx
+Reservar un vuelo	Thankyou page  	https://www.pricetravel.com/vuelos/voucher?keyValidation=c98c1b31-eedd-4d13-a2a5-2730820f7a46&id=afb66FgECiaiyT78GWHTLjupi7k6P1fek5obm8XMu4o=&em=3KtvQWM02wuyDTgP1RGGfn9KqsHHFvR5KfQ4SoBYKrXUCznMadpsCvmCzB+/CXSk
+Buscar un paquete	Home paquetes	https://www.pricetravel.com/paquetes
+Buscar un paquete	Listado de paquetes	https://www.pricetravel.com/paquetes/resultados?startingFromDateTime=2024-08-06&returningFromDateTime=2024-08-11&CheckIn=2024-08-06&CheckOut=2024-08-11&startingFromAirport=QRO&returningFromAirport=CUN&startingPlaceId=281960&returningPlaceId=54455&room1.adults=2&rooms=1&adults=2&tripMode=undefined&tripCabin=undefined&QuoteList=true&QuoteFlight=true&keyWordId=0&keyWordTable=0&actionType=2&nonStopOnly=undefined&page=1
+Elegir un paquete	Ficha de hotel	https://www.pricetravel.com/paquetes/ocean-view-cancun-arenas/hotel-detalle?checkIn=2024-08-06&checkOut=2024-08-11&uri=ocean-view-cancun-arenas&hotelCheckIn=2024-08-06&returningFromAirport=CUN&returningFromDateTime=2024-08-11&returningPlaceId=54455&startingFromAirport=QRO&startingFromDateTime=2024-08-06&startingPlaceId=281960&selectedOutputDestination=QRO&selectedReturnDestination=CUN&selectedOutboundFlight=2467_564&selectedReturnFlight=551_2466&packageId=4d2bd1f6-3e7d-247b-55db-2ce1c07138f5&room1.adults=2&room1.kids=0&room1.agekids=&rooms=1&adults=2&kids=0&infants=0&agekids=
+Elegir un paquete	Cambiar vuelo	https://www.pricetravel.com/paquetes/vuelos?checkIn=2024-08-06&checkOut=2024-08-11&uri=ocean-view-cancun-arenas&hotelCheckIn=2024-10-09&returningFromAirport=CUN&returningFromDateTime=2024-08-11&returningPlaceId=54455&startingFromAirport=QRO&startingFromDateTime=2024-08-06&startingPlaceId=281960&selectedOutputDestination=QRO&selectedReturnDestination=CUN&selectedOutboundFlight=2467_564&selectedReturnFlight=551_2466&room1.adults=2&room1.kids=0&room1.agekids=&rooms=1&adults=2&kids=0&infants=0&agekids=&hotelId=100652&roomId=1001453&rateId=8365&summary=open&token=&packageId=undefined&fareKey=AM~2461~BASICA%5EAM~520~BASICA%7CAM~551~BASICA%5EAM~2466~BASICA&mealPlanCode=I
+Reservar un paquete	Elegir formas de pago  - PGA	https://pagos.pricetravel.com/charge/21a9731a-aa10-4a4d-9c26-3b9181e275ce?culture=es-mx
+Reservar un paquete	Thankyou page  	https://www.pricetravel.com/paquetes/voucher?keyValidation=4d6c7ec5-6f2a-4f6f-a2f1-cfbfcc809b52&id=vq8ozb7bkJLu3YpUH3yPLrsTivcRgt22v7Wg++yj+kI=&em=kaNMWwD/+deNwwVvg6OoVEhXuAjgoNKeAyeFLK1r7HXgVmocFoKW/85o4l6D2dCJ
+Consultar itinerario	Consultar reservación	https://www.pricetravel.com/ayuda/consultar-itinerario
+Iniciar sesion	Login/Creación de cuenta	https://www.pricetravel.com/login?redirectTo=%2F
+Crear cuenta	Login/Creación de cuenta	https://www.pricetravel.com/login?redirectTo=%2F
+Recuperar contraseña	Recuperar contraseña	https://www.pricetravel.com/login?redirectTo=%2F
+Pagar un localizador existente	Elegir formas de pago - PGColo	https://pagos.pricetravel.com.mx/pago/v2/784c170e-0072-43be-b206-13166fac7de0
+Pagar un localizador existente	Thankyou page  - PGColo	No se pudo evaluar
